@@ -1,0 +1,33 @@
+@startuml
+class ministerio_de_defenza{
++soldado: int[]
++cuarteles: int[]
++compañias:varchar[]
++servicios: varchar[]
+}
+
+class soldado{
++cod_Sol: int[]
++nombre: varchar[]
++apellido: varchar[]
++graduacion: int[]
+}
+
+class cuarteles{
++cod_Cuartel: int[]
++nombre: varchar[]
++ubicacion: varchar[]
+}
+
+class servicios{
++cod_servicio:int[]
++guardias:int[]
++imaginarias:int[]
++cuarteleron:int[]
+}
+
+ministerio_de_Defensa -->cuarteles 
+compañia -->cuarteles
+compañia -->soldado
+soldado -->servicios
+@enduml
